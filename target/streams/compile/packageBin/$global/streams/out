@@ -1,0 +1,21 @@
+[0m[[0m[0minfo[0m] [0m[0mPackaging /home/marcell/Code/Misc-Test/People Name Coding Test/namesparser/target/scala-2.12/namesparser_2.12-0.1.0-SNAPSHOT.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	example/NameParser$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/marcell/Code/Misc-Test/People Name Coding Test/namesparser/target/scala-2.12/classes/example/NameParser$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	example/Greeting.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/marcell/Code/Misc-Test/People Name Coding Test/namesparser/target/scala-2.12/classes/example/Greeting.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	example/State.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/marcell/Code/Misc-Test/People Name Coding Test/namesparser/target/scala-2.12/classes/example/State.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	example/NameParser$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/marcell/Code/Misc-Test/People Name Coding Test/namesparser/target/scala-2.12/classes/example/NameParser$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	example/NameParser.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/marcell/Code/Misc-Test/People Name Coding Test/namesparser/target/scala-2.12/classes/example/NameParser.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	example/FullName$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/marcell/Code/Misc-Test/People Name Coding Test/namesparser/target/scala-2.12/classes/example/FullName$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	example/FullName.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/marcell/Code/Misc-Test/People Name Coding Test/namesparser/target/scala-2.12/classes/example/FullName.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	example[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/marcell/Code/Misc-Test/People Name Coding Test/namesparser/target/scala-2.12/classes/example[0m
+[0m[[0m[0mdebug[0m] [0m[0m	example/State$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/marcell/Code/Misc-Test/People Name Coding Test/namesparser/target/scala-2.12/classes/example/State$.class[0m
+[0m[[0m[0minfo[0m] [0m[0mDone packaging.[0m
