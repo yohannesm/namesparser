@@ -1,25 +1,31 @@
 package example
 
+import scala.collection.immutable.ListMap
 import scala.collection.mutable
 import scala.util.Try
 
 case class FullName(firstName: String, lastName: String)
 case class State(firstNameIndexes: Array[Int], lastNameIndexes: Array[Int])
 
-object NameParser extends Greeting with App {
+object NameParser extends App {
   val NumberUniqueNames = 25
 
-  def generateModifiedNames(set: collection.mutable.Set[FullName]) : Set[FullName] = {
+  def generateModifiedNames(
+      set: collection.mutable.Set[FullName]): Set[FullName] = {
     val indexedSet = set.toIndexedSeq
-    val arrFirstNameAndIndex = (for(i <- indexedSet.indices) yield indexedSet(i).firstName -> i).toArray
-    val arrLastNameAndIndex = (for(i <- indexedSet.indices) yield indexedSet(i).lastName -> i).toArray
+    val arrFirstNameAndIndex =
+      (for (i <- indexedSet.indices) yield indexedSet(i).firstName -> i).toArray
+    val arrLastNameAndIndex =
+      (for (i <- indexedSet.indices) yield indexedSet(i).lastName -> i).toArray
     //most naive algorithm , just shift all the names by one
     var resultSet = Set[FullName]()
-    for(i <- 0 until NumberUniqueNames - 1) {
-      resultSet += FullName(arrFirstNameAndIndex(i)._1, arrLastNameAndIndex(i + 1)._1)
+    for (i <- 0 until NumberUniqueNames - 1) {
+      resultSet += FullName(arrFirstNameAndIndex(i)._1,
+                            arrLastNameAndIndex(i + 1)._1)
     }
     // the last name need to be added is the 0th last name and nth first name
-    resultSet += FullName(arrFirstNameAndIndex(NumberUniqueNames-1)._1, arrLastNameAndIndex(0)._1)
+    resultSet += FullName(arrFirstNameAndIndex(NumberUniqueNames - 1)._1,
+                          arrLastNameAndIndex(0)._1)
     resultSet
   }
 
@@ -102,14 +108,14 @@ object NameParser extends Greeting with App {
     case (k, v) => println("full name = " + k + " count =" + v)
   }
 
-  val tenMostPopularLastName = mutable
-    .ListMap(LastnameMap.toSeq.sortWith(_._2 > _._2): _*)
-    .take(10)
-    .toArray
-  val tenMostPopularFirstName = mutable
-    .ListMap(FirstnameMap.toSeq.sortWith(_._2 > _._2): _*)
-    .take(10)
-    .toArray
+  val tenMostPopularLastName =
+    ListMap(LastnameMap.toSeq.sortWith(_._2 > _._2): _*)
+      .take(10)
+      .toArray
+  val tenMostPopularFirstName =
+    ListMap(FirstnameMap.toSeq.sortWith(_._2 > _._2): _*)
+      .take(10)
+      .toArray
 
   println("ten most popular lastNames are : ")
   tenMostPopularLastName.foreach {
